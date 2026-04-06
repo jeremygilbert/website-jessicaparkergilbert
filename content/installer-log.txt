@@ -1,0 +1,127 @@
+********************************************************************************
+INSTALLER-LOG
+********************************************************************************
+START-PRECHECK:11:29:21
+----------------------------------
+ENVIROMENT:
+version: 0.3.2
+log level: 1
+php:5.3.13
+php sapi: cgi-fcgi
+mysql:5.1.53-log
+server: Apache
+document root: /home/jessparker/jessicaparkergilbert.com/content
+document root 755: true
+log file 644: true
+secure build name: 5093fd8828a9d1326_20121102_jessicaparkergilbert
+----------------------------------
+SETTINGS:
+database connection => host:mysql.sandbox.jessicaparkergilbert.com | database:sandbox_jessicaparkergil 
+old url:'http://sandbox.jessicaparkergilbert.com/content'
+new url:'http://www.jessicaparkergilbert.com/content'
+disable ssl: false
+zip manual: true
+zip archive installed: true
+----------------------------------
+DROP TABLES STATUS:
+results => removing tables
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_commentmeta
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_comments
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_duplicator
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_links
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_options
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_postmeta
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_posts
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_term_relationships
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_term_taxonomy
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_terms
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_usermeta
+DROP TABLE `sandbox_jessicaparkergil`.wp_4kb4pz_users
+
+END-PRECHECK:11:29:21
+
+********************************************************************************
+PACKAGE-EXTRACTION
+********************************************************************************
+START-EXTRACTION:11:29:21
+
+
+-package extraction is in manual mode-
+
+END-EXTRACTION:11:29:21
+
+********************************************************************************
+SCRIPT FILES ROUTINE
+********************************************************************************
+START-FILES:11:29:21
+
+New sql file generated from database.sql to /home/jessparker/jessicaparkergilbert.com/content/installer-data.sql 
+
+new url is: http://www.jessicaparkergilbert.com/content
+scrubbed old url(s) in installer-data.sql:
+- http://sandbox.jessicaparkergilbert.com/content
+
+finalized scripts:
+- see installer-data.sql for SQL processed.
+- see wp-config.php for updated changes. 
+
+END FILES:11:29:21
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+START-DB:11:29:21
+
+db create: true
+db clean: true
+db replace characters: false
+db mysqli charset: false
+db wait_timeout: 5000
+----------------------------------
+DATABASE RESULTS
+processed queries: 710 
+process time: 0.7069 sec.
+
+Table Record Counts
+wp_4kb4pz_commentmeta:0
+wp_4kb4pz_comments:1
+wp_4kb4pz_duplicator:0
+wp_4kb4pz_links:7
+wp_4kb4pz_options:177
+wp_4kb4pz_postmeta:271
+wp_4kb4pz_posts:162
+wp_4kb4pz_term_relationships:40
+wp_4kb4pz_term_taxonomy:10
+wp_4kb4pz_terms:10
+wp_4kb4pz_usermeta:18
+wp_4kb4pz_users:1
+
+Transient cached cleanup completed.
+
+----------------------------------
+START SERIALIZATION:11:29:21
+
+serialization query (126):
+SELECT option_id, option_value FROM wp_4kb4pz_options 
+
+serialization query (271):
+SELECT meta_id, meta_value FROM wp_4kb4pz_postmeta 
+
+serialization query (18):
+SELECT umeta_id, meta_value FROM wp_4kb4pz_usermeta 
+
+serialization replacements:
+updated 2 records
+
+END SERIALIZATION:11:29:21
+
+END DB-ROUTINES:11:29:21
+
+********************************************************************************
+START FINAL CLEANUP
+********************************************************************************
+START-CLEANUP:11:29:21
+
+web configuration file was not renamed because the paths did not change.
+END FINAL:11:29:21
+
